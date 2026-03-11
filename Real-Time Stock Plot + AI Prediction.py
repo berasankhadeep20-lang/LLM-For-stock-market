@@ -10,8 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 # STOCK LIST
 # -------------------------
 
-stocks = ["AAPL","MSFT","TSLA","AMZN","NVDA"]
-
+stocks = ["AAPL","MSFT","TSLA","AMZN","NVDA","RELIANCE.NS","TCS.NS","INFY.NS","HDFCBANK.NS"]
 features = [
     "return",
     "MA20",
@@ -111,4 +110,4 @@ while True:
     for stock in stocks:
         analyze_stock(stock)
 
-    time.sleep(6)
+    time.sleep(600)
