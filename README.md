@@ -162,21 +162,6 @@ Live Dashboard
 
 </pre>
 
-<hr>
-
-<h2>🎥 Dashboard Demo</h2>
-
-<p align="center">
-
-<img src="demo.gif" width="700">
-
-</p>
-
-<p align="center">
-<i>Add a screen recording of your dashboard and save it as demo.gif</i>
-</p>
-
-<hr>
 
 <h2>📈 Example Output</h2>
 
