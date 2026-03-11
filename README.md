@@ -1,8 +1,19 @@
 <h1 align="center">📈 AI Stock Prediction & Trading Dashboard</h1>
 
 <p align="center">
-A Machine Learning based stock analysis system that performs 
-<strong>real-time market analysis, risk prediction, return forecasting, and trading signal detection</strong>.
+Machine Learning powered stock analysis platform with<br>
+<b>real-time market data, risk prediction, return forecasting, trading signals, and live dashboards.</b>
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
+<img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange">
+<img src="https://img.shields.io/badge/Dashboard-Dash%20%7C%20Plotly-green">
+<img src="https://img.shields.io/badge/Data-Yahoo%20Finance-yellow">
+<img src="https://img.shields.io/badge/Status-Active-success">
+<img src="https://img.shields.io/badge/License-MIT-blue">
+
 </p>
 
 <hr>
@@ -10,83 +21,172 @@ A Machine Learning based stock analysis system that performs
 <h2>🚀 Project Overview</h2>
 
 <p>
-This project builds a <strong>Machine Learning powered stock analysis system</strong> using Python.
-It downloads real market data, extracts financial indicators, predicts future returns,
-estimates risk, and visualizes results through an interactive web dashboard.
+This project builds an <b>AI-powered stock analysis system</b> using Python and Machine Learning.
+The system collects real-time stock data, extracts financial indicators, predicts returns,
+estimates market risk, and visualizes everything in an interactive web dashboard.
 </p>
 
 <p>
-The system automatically:
+The goal of the project is to simulate a <b>mini quantitative trading system</b> similar to tools used in professional finance.
 </p>
 
-<ul>
-<li>Fetches real-time stock data</li>
-<li>Extracts financial indicators</li>
-<li>Predicts stock returns using Machine Learning</li>
-<li>Calculates market risk (volatility)</li>
-<li>Detects Buy / Sell / Hold signals</li>
-<li>Displays interactive charts in a browser dashboard</li>
-</ul>
+<hr>
+
+<h2>📊 Key Features</h2>
+
+<table>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>📡 Real-time data</td>
+<td>Fetches live stock market data from Yahoo Finance API</td>
+</tr>
+
+<tr>
+<td>🤖 Machine Learning predictions</td>
+<td>Predicts future stock returns using a trained model</td>
+</tr>
+
+<tr>
+<td>⚠ Risk estimation</td>
+<td>Calculates volatility to measure investment risk</td>
+</tr>
+
+<tr>
+<td>📈 Interactive charts</td>
+<td>Dynamic Plotly charts for stock visualization</td>
+</tr>
+
+<tr>
+<td>💰 Buy/Sell signals</td>
+<td>AI-based trading signals based on predicted return</td>
+</tr>
+
+<tr>
+<td>🌐 Web dashboard</td>
+<td>Live browser dashboard built with Dash</td>
+</tr>
+
+</table>
 
 <hr>
 
 <h2>🧠 Machine Learning Model</h2>
 
 <p>
-The prediction model uses a <b>Random Forest Regressor</b> trained on historical stock data.
+The system uses a <b>Random Forest Regressor</b> from Scikit-Learn to predict stock returns.
 </p>
 
-<p>The model learns relationships between financial indicators and future stock returns.</p>
+<p>
+The model is trained on historical stock data and learns patterns between
+market indicators and future price movements.
+</p>
 
-<p><strong>Features used in the model:</strong></p>
+<h3>Model Input Features</h3>
 
 <ul>
-<li>Daily Returns</li>
-<li>20-day Moving Average (MA20)</li>
-<li>50-day Moving Average (MA50)</li>
+<li>Daily Return</li>
+<li>20-Day Moving Average (MA20)</li>
+<li>50-Day Moving Average (MA50)</li>
 <li>Volatility</li>
 <li>Momentum</li>
 <li>Volume Change</li>
 </ul>
 
-<p>
-The model predicts the <strong>expected 5-day return</strong> of a stock.
-</p>
-
-<hr>
-
-<h2>📊 Features</h2>
+<h3>Model Output</h3>
 
 <ul>
-<li>📡 Real-time stock data analysis</li>
-<li>🤖 Machine Learning price prediction</li>
-<li>⚠ Risk estimation using volatility</li>
-<li>📈 Interactive price charts</li>
-<li>📊 Moving average trend analysis</li>
-<li>💰 Automatic Buy / Sell / Hold signal detection</li>
-<li>🌐 Live dashboard running in a web browser</li>
+<li>Predicted 5-day return</li>
+<li>Risk estimate (volatility)</li>
+<li>Trading signal (BUY / SELL / HOLD)</li>
 </ul>
 
 <hr>
 
-<h2>🖥 Dashboard</h2>
+<h2>📊 System Architecture</h2>
 
-<p>
-The project includes a live web dashboard built using Plotly Dash.
+<pre>
+
+        Stock Market API
+            │
+            ▼
+      Data Collection
+        (yfinance)
+            │
+            ▼
+      Feature Engineering
+            │
+            ▼
+     Machine Learning Model
+        (Random Forest)
+            │
+            ▼
+     Return Prediction + Risk
+            │
+            ▼
+      Trading Signal Engine
+            │
+            ▼
+   Interactive Dashboard (Dash)
+
+</pre>
+
+<hr>
+
+<h2>📊 Machine Learning Pipeline</h2>
+
+<pre>
+
+Historical Data
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Model Training
+      │
+      ▼
+Backtesting
+      │
+      ▼
+Real-Time Prediction
+      │
+      ▼
+Live Dashboard
+
+</pre>
+
+<hr>
+
+<h2>🎥 Dashboard Demo</h2>
+
+<p align="center">
+
+<img src="demo.gif" width="700">
+
 </p>
 
-<p>The dashboard displays:</p>
-
-<ul>
-<li>Interactive stock charts</li>
-<li>Predicted return values</li>
-<li>Estimated market risk</li>
-<li>Buy / Sell trading signals</li>
-</ul>
-
-<p>
-Charts automatically update with live market data.
+<p align="center">
+<i>Add a screen recording of your dashboard and save it as demo.gif</i>
 </p>
+
+<hr>
+
+<h2>📈 Example Output</h2>
+
+<pre>
+
+Predicted Return: 0.0082
+Estimated Risk: 0.0113
+Signal: BUY
+
+</pre>
 
 <hr>
 
@@ -129,7 +229,7 @@ pip install dash plotly yfinance pandas numpy scikit-learn
 python stock_dashboard.py
 </pre>
 
-<p>Open your browser and go to:</p>
+<p>Open your browser:</p>
 
 <pre>
 http://127.0.0.1:8050
@@ -140,6 +240,7 @@ http://127.0.0.1:8050
 <h2>📂 Project Structure</h2>
 
 <pre>
+
 stock-ai-dashboard/
 │
 ├── data_download.py
@@ -148,17 +249,21 @@ stock-ai-dashboard/
 ├── backtesting.py
 ├── stock_dashboard.py
 │
+├── demo.gif
 └── README.md
+
 </pre>
 
 <hr>
 
-<h2>📊 Example Output</h2>
+<h2>🔮 Future Improvements</h2>
 
 <ul>
-<li>Predicted Return: 0.008</li>
-<li>Risk (Volatility): 0.011</li>
-<li>Signal: BUY</li>
+<li>Deep Learning models (LSTM / Transformers)</li>
+<li>Portfolio optimization</li>
+<li>Sentiment analysis from financial news</li>
+<li>Multi-stock scanning engine</li>
+<li>Real-time trading integration</li>
 </ul>
 
 <hr>
@@ -166,9 +271,9 @@ stock-ai-dashboard/
 <h2>⚠ Disclaimer</h2>
 
 <p>
-This project is for <strong>educational and research purposes only</strong>.
-It should not be used as financial advice or for real trading decisions.
-Stock markets involve risk and unpredictable behavior.
+This project is created for <b>educational and research purposes only</b>.
+It is not financial advice. Stock markets involve risk and unpredictable behavior.
+Always do your own research before investing.
 </p>
 
 <hr>
@@ -176,17 +281,26 @@ Stock markets involve risk and unpredictable behavior.
 <h2>👨‍💻 Author</h2>
 
 <p>
-<strong>Sankhadeep Bera</strong>
+<b>Sankhadeep Bera</b>
 </p>
 
 <p>
-YouTube: <a href="https://youtube.com/@05sankhadeepbera78">@05sankhadeepbera78</a>
+YouTube:  
+<a href="https://youtube.com/@05sankhadeepbera78">
+@05sankhadeepbera78
+</a>
 </p>
 
 <hr>
 
-<h2>⭐ If you like this project</h2>
+<h2>⭐ Support</h2>
 
 <p>
-Give the repository a ⭐ on GitHub!
+If you found this project useful, consider giving it a ⭐ on GitHub!
+</p>
+
+<p align="center">
+
+⭐ ⭐ ⭐ ⭐ ⭐
+
 </p>
