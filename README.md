@@ -1,176 +1,169 @@
-<h1 align="center">📈 AI Stock Prediction & Trading Dashboard</h1>
+<h1 align="center">📈 AI Stock Prediction & Quant Trading Dashboard</h1>
 
 <p align="center">
-Machine Learning powered stock analysis platform with<br>
-<b>real-time market data, risk prediction, return forecasting, trading signals, and live dashboards.</b>
+An AI-powered stock market analysis platform built using Python, Machine Learning, and Deep Learning.
 </p>
 
 <p align="center">
-
-<img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
-<img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange">
-<img src="https://img.shields.io/badge/Dashboard-Dash%20%7C%20Plotly-green">
+<img src="https://img.shields.io/badge/Python-3.10+-blue">
+<img src="https://img.shields.io/badge/Machine%20Learning-ScikitLearn-orange">
+<img src="https://img.shields.io/badge/Deep%20Learning-LSTM-red">
+<img src="https://img.shields.io/badge/Dashboard-Plotly%20Dash-green">
 <img src="https://img.shields.io/badge/Data-Yahoo%20Finance-yellow">
-<img src="https://img.shields.io/badge/Status-Active-success">
 <img src="https://img.shields.io/badge/License-MIT-blue">
-
 </p>
 
 <hr>
 
-<h2>🚀 Project Overview</h2>
+<h2>📊 Project Overview</h2>
 
 <p>
-This project builds an <b>AI-powered stock analysis system</b> using Python and Machine Learning.
-The system collects real-time stock data, extracts financial indicators, predicts returns,
-estimates market risk, and visualizes everything in an interactive web dashboard.
+This project builds an <b>AI-powered stock analysis and trading research platform</b>.
+It combines machine learning, deep learning, portfolio optimization, sentiment analysis,
+and interactive dashboards to simulate a simplified quantitative trading system.
 </p>
 
 <p>
-The goal of the project is to simulate a <b>mini quantitative trading system</b> similar to tools used in professional finance.
+The system collects real-time stock market data, analyzes historical trends, predicts
+future returns, estimates risk, and provides trading signals.
 </p>
 
 <hr>
 
-<h2>📊 Key Features</h2>
+<h2>🚀 Features</h2>
 
-<table>
-<tr>
-<th>Feature</th>
-<th>Description</th>
-</tr>
-
-<tr>
-<td>📡 Real-time data</td>
-<td>Fetches live stock market data from Yahoo Finance API</td>
-</tr>
-
-<tr>
-<td>🤖 Machine Learning predictions</td>
-<td>Predicts future stock returns using a trained model</td>
-</tr>
-
-<tr>
-<td>⚠ Risk estimation</td>
-<td>Calculates volatility to measure investment risk</td>
-</tr>
-
-<tr>
-<td>📈 Interactive charts</td>
-<td>Dynamic Plotly charts for stock visualization</td>
-</tr>
-
-<tr>
-<td>💰 Buy/Sell signals</td>
-<td>AI-based trading signals based on predicted return</td>
-</tr>
-
-<tr>
-<td>🌐 Web dashboard</td>
-<td>Live browser dashboard built with Dash</td>
-</tr>
-
-</table>
-
-<hr>
-
-<h2>🧠 Machine Learning Model</h2>
-
-<p>
-The system uses a <b>Random Forest Regressor</b> from Scikit-Learn to predict stock returns.
-</p>
-
-<p>
-The model is trained on historical stock data and learns patterns between
-market indicators and future price movements.
-</p>
-
-<h3>Model Input Features</h3>
-
+<h3>📡 Real-Time Market Data</h3>
 <ul>
-<li>Daily Return</li>
-<li>20-Day Moving Average (MA20)</li>
-<li>50-Day Moving Average (MA50)</li>
-<li>Volatility</li>
-<li>Momentum</li>
-<li>Volume Change</li>
+<li>Live stock data collection using Yahoo Finance API</li>
+<li>Automatic updates for real-time prediction</li>
 </ul>
 
-<h3>Model Output</h3>
-
+<h3>🤖 Machine Learning Prediction</h3>
 <ul>
-<li>Predicted 5-day return</li>
-<li>Risk estimate (volatility)</li>
-<li>Trading signal (BUY / SELL / HOLD)</li>
+<li>Random Forest regression model</li>
+<li>Predicts expected stock returns</li>
+<li>Uses engineered financial indicators</li>
 </ul>
+
+<h3>🧠 Deep Learning (LSTM)</h3>
+<ul>
+<li>Long Short-Term Memory neural network</li>
+<li>Time-series forecasting for stock prices</li>
+<li>Learns long-term market patterns</li>
+</ul>
+
+<h3>⚠ Risk Estimation</h3>
+<ul>
+<li>Volatility-based risk estimation</li>
+<li>Standard deviation of returns</li>
+<li>Helps evaluate investment safety</li>
+</ul>
+
+<h3>📉 Buy / Sell Signal Detection</h3>
+<ul>
+<li>Signals generated using predicted returns</li>
+<li>BUY if expected return is positive</li>
+<li>SELL if expected return is negative</li>
+</ul>
+
+<h3>📈 Interactive Charts</h3>
+<ul>
+<li>Interactive visualizations using Plotly</li>
+<li>Real-time stock price movement</li>
+<li>Model predictions vs actual prices</li>
+</ul>
+
+<h3>🔁 Strategy Backtesting</h3>
+<ul>
+<li>Test strategies on historical stock data</li>
+<li>Compare strategy performance with market returns</li>
+<li>Evaluate model reliability</li>
+</ul>
+
+<h3>💼 Portfolio Optimization</h3>
+<ul>
+<li>Uses Modern Portfolio Theory</li>
+<li>Calculates optimal allocation across multiple stocks</li>
+<li>Maximizes Sharpe Ratio</li>
+</ul>
+
+<h3>📰 News Sentiment Analysis</h3>
+<ul>
+<li>Fetches financial news using News API</li>
+<li>Analyzes sentiment using NLP</li>
+<li>Detects bullish or bearish market mood</li>
+</ul>
+
+<h3>🌐 Live Dashboard</h3>
+<ul>
+<li>Interactive web dashboard built with Dash</li>
+<li>Displays charts, predictions, and signals</li>
+<li>Runs locally in a browser</li>
+</ul>
+
+<hr>
+
+<h2>🧠 Machine Learning Pipeline</h2>
+
+<pre>
+Stock Market Data
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+Machine Learning Model
+(Random Forest)
+        │
+        ▼
+Deep Learning Model
+(LSTM)
+        │
+        ▼
+Return Prediction
+        │
+        ▼
+Risk Estimation
+        │
+        ▼
+Buy / Sell Signals
+        │
+        ▼
+Portfolio Optimization
+        │
+        ▼
+Interactive Dashboard
+</pre>
 
 <hr>
 
 <h2>📊 System Architecture</h2>
 
-<pre>
-
-        Stock Market API
-            │
-            ▼
-      Data Collection
-        (yfinance)
-            │
-            ▼
-      Feature Engineering
-            │
-            ▼
-     Machine Learning Model
-        (Random Forest)
-            │
-            ▼
-     Return Prediction + Risk
-            │
-            ▼
-      Trading Signal Engine
-            │
-            ▼
-   Interactive Dashboard (Dash)
-
-</pre>
+<p align="center">
+<img src="architecture.svg" width="800">
+</p>
 
 <hr>
-
-<h2>📊 Machine Learning Pipeline</h2>
-
-<pre>
-
-Historical Data
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Model Training
-      │
-      ▼
-Backtesting
-      │
-      ▼
-Real-Time Prediction
-      │
-      ▼
-Live Dashboard
-
-</pre>
-
 
 <h2>📈 Example Output</h2>
 
 <pre>
+Predicted Return: 0.0068
+Estimated Risk: 0.0102
+Trading Signal: BUY
+</pre>
 
-Predicted Return: 0.0082
-Estimated Risk: 0.0113
-Signal: BUY
+<pre>
+Optimal Portfolio Allocation
 
+AAPL : 30%
+MSFT : 25%
+NVDA : 20%
+TSLA : 15%
+AMZN : 10%
 </pre>
 
 <hr>
@@ -182,9 +175,14 @@ Signal: BUY
 <li>Pandas</li>
 <li>NumPy</li>
 <li>Scikit-Learn</li>
+<li>TensorFlow / Keras</li>
+<li>SciPy</li>
 <li>Plotly</li>
 <li>Dash</li>
+<li>Matplotlib</li>
 <li>Yahoo Finance API</li>
+<li>News API</li>
+<li>TextBlob</li>
 </ul>
 
 <hr>
@@ -194,27 +192,25 @@ Signal: BUY
 <p>Clone the repository:</p>
 
 <pre>
-git clone https://github.com/yourusername/stock-ai-dashboard.git
-cd LLM-For-stock-market
+git clone https://github.com/berasankhadeep20-lang/LLM-For-stock-market.git
+cd ai-stock-dashboard
 </pre>
 
 <p>Install dependencies:</p>
 
 <pre>
-pip install dash plotly yfinance pandas numpy scikit-learn
+pip install -r requirements.txt
 </pre>
 
 <hr>
 
-<h2>▶ Running the Project</h2>
-
-<p>Run the dashboard:</p>
+<h2>▶ Running the Dashboard</h2>
 
 <pre>
 python stock_dashboard.py
 </pre>
 
-<p>Open your browser:</p>
+<p>Open in your browser:</p>
 
 <pre>
 http://127.0.0.1:8050
@@ -225,17 +221,21 @@ http://127.0.0.1:8050
 <h2>📂 Project Structure</h2>
 
 <pre>
-
-stock-ai-dashboard/
+ai-stock-dashboard
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── architecture.svg
 │
 ├── data_download.py
 ├── model_training.py
+├── lstm_model.py
 ├── realtime_prediction.py
+├── sentiment_analysis.py
+├── portfolio_optimizer.py
 ├── backtesting.py
 ├── stock_dashboard.py
-│
-└── README.md
-
 </pre>
 
 <hr>
@@ -243,11 +243,11 @@ stock-ai-dashboard/
 <h2>🔮 Future Improvements</h2>
 
 <ul>
-<li>Deep Learning models (LSTM / Transformers)</li>
-<li>Portfolio optimization</li>
-<li>Sentiment analysis from financial news</li>
-<li>Multi-stock scanning engine</li>
-<li>Real-time trading integration</li>
+<li>Transformer-based stock prediction models</li>
+<li>Reinforcement learning trading agents</li>
+<li>Multi-stock market scanning</li>
+<li>Automated trade execution</li>
+<li>Risk simulation models</li>
 </ul>
 
 <hr>
@@ -255,9 +255,8 @@ stock-ai-dashboard/
 <h2>⚠ Disclaimer</h2>
 
 <p>
-This project is created for <b>educational and research purposes only</b>.
-It is not financial advice. Stock markets involve risk and unpredictable behavior.
-Always do your own research before investing.
+This project is for <b>educational and research purposes only</b>.
+Stock markets are highly unpredictable and involve financial risk.
 </p>
 
 <hr>
@@ -265,14 +264,8 @@ Always do your own research before investing.
 <h2>👨‍💻 Author</h2>
 
 <p>
-<b>Sankhadeep Bera</b>
-</p>
-
-<p>
-YouTube:  
-<a href="https://youtube.com/@05sankhadeepbera78">
-@05sankhadeepbera78
-</a>
+<b>Sankhadeep Bera</b><br>
+YouTube: https://youtube.com/@05sankhadeepbera78
 </p>
 
 <hr>
@@ -280,11 +273,5 @@ YouTube:
 <h2>⭐ Support</h2>
 
 <p>
-If you found this project useful, consider giving it a ⭐ on GitHub!
-</p>
-
-<p align="center">
-
-⭐ ⭐ ⭐ ⭐ ⭐
-
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 </p>

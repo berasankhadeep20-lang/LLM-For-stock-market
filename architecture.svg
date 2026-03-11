@@ -1,0 +1,38 @@
+<svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+
+<rect x="50" y="50" width="200" height="60" fill="#4CAF50"/>
+<text x="150" y="85" fill="white" font-size="14" text-anchor="middle">
+Stock Market APIs
+</text>
+
+<rect x="50" y="150" width="200" height="60" fill="#2196F3"/>
+<text x="150" y="185" fill="white" font-size="14" text-anchor="middle">
+Data Collection
+</text>
+
+<rect x="50" y="250" width="200" height="60" fill="#673AB7"/>
+<text x="150" y="285" fill="white" font-size="14" text-anchor="middle">
+Feature Engineering
+</text>
+
+<rect x="350" y="150" width="200" height="60" fill="#FF9800"/>
+<text x="450" y="185" fill="white" font-size="14" text-anchor="middle">
+ML Models
+</text>
+
+<rect x="350" y="250" width="200" height="60" fill="#E91E63"/>
+<text x="450" y="285" fill="white" font-size="14" text-anchor="middle">
+LSTM Model
+</text>
+
+<rect x="650" y="200" width="200" height="60" fill="#009688"/>
+<text x="750" y="235" fill="white" font-size="14" text-anchor="middle">
+Portfolio Optimizer
+</text>
+
+<rect x="650" y="300" width="200" height="60" fill="#795548"/>
+<text x="750" y="335" fill="white" font-size="14" text-anchor="middle">
+Trading Dashboard
+</text>
+
+</svg>
