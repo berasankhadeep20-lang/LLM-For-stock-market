@@ -234,7 +234,6 @@ stock-ai-dashboard/
 ├── backtesting.py
 ├── stock_dashboard.py
 │
-├── demo.gif
 └── README.md
 
 </pre>
