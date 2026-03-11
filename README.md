@@ -195,7 +195,7 @@ Signal: BUY
 
 <pre>
 git clone https://github.com/yourusername/stock-ai-dashboard.git
-cd stock-ai-dashboard
+cd LLM-For-stock-market
 </pre>
 
 <p>Install dependencies:</p>
